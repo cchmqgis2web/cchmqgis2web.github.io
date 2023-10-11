@@ -1,3 +1,5 @@
+ol.proj.proj4.register(proj4);
+ol.proj.get("EPSG:3857").setExtent([320425.229818, 6040488.576641, 800693.935235, 6260360.737673]);
 var wms_layers = [];
 
 var lyr_PlanIGNv2_0 = new ol.layer.Tile({
