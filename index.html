@@ -8,8 +8,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="./resources/ol.css">
         <link rel="stylesheet" href="resources/fontawesome-all.min.css">
-        <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
-        <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
 <style>
@@ -26,7 +24,7 @@
             background-color: #ffffff;
         }
         .ol-control button {
-            background-color: #f8f8f8 !important;
+            background-color: #fcfc1f !important;
             color: #000000 !important;
             border-radius: 0px !important;
         }
@@ -38,16 +36,18 @@
             background: none !important;
         }
         .ol-scale-line-inner {
-            border: 2px solid #f8f8f8 !important;
+            border: 2px solid #fcfc1f !important;
             border-top: none !important;
             background: rgba(255, 255, 255, 0.5) !important;
             color: black !important;
         }
         </style>
         <style>
-        #map {
-            width: 1756px;
-            height: 805px;
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
         }
         </style>
         <title></title>
@@ -60,17 +60,12 @@
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
-<script src="resources/proj4.js"></script>
-        <script>proj4.defs('EPSG:3857','+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs');</script>
         <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
-        <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
-        <script src="resources/horsey.min.js"></script>
-        <script src="resources/ol3-search-layer.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/CroixCalvairesdeHauteMarne_0.js"></script>
-        <script src="styles/CroixCalvairesdeHauteMarne_0_style.js"></script>
+        <script src="layers/CroixCalvairesdeHauteMarne_1.js"></script>
+        <script src="styles/CroixCalvairesdeHauteMarne_1_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>

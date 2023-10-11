@@ -27,10 +27,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 3, projection: new ol.proj.Projection({
-            code: 'EPSG:3857',
-            extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
-            units: 'm'})
+         maxZoom: 28, minZoom: 1
     })
 });
 
@@ -40,20 +37,7 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_CroixCalvairesdeHauteMarne_0,
-      colName: 'commune',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([582372.937816, 6079494.418681, 597381.334860, 6086365.423713], map.getSize());
+map.getView().fit([563815.394998, 6169108.143443, 571319.593521, 6172543.645959], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
